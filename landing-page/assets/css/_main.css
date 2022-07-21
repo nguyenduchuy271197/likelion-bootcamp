@@ -28,6 +28,7 @@
 
 .nav .nav-list {
   display: flex;
+  align-items: center;
 }
 
 /* -------------------- *\
@@ -62,6 +63,7 @@
 .project .grid.grid-cols-4 {
   gap: 16px;
   padding: 0 16px;
+  margin-bottom: 16px;
 }
 
 .project .project-item {
