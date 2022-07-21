@@ -17,9 +17,11 @@ main {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 400;
+  text-transform: capitalize;
 }
 
 a {
@@ -27,8 +29,25 @@ a {
   text-decoration: none;
 }
 
-ul,
-li {
+img {
+  display: block;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+input,
+button {
+  display: inline-block;
+  font: inherit;
+  width: 100%;
+}
+
+ul {
   list-style: none;
 }
 
@@ -41,12 +60,78 @@ li {
   letter-spacing: 4px;
 }
 
-.heading-secondary,
-.heading-tertiary {
-  font-size: 24px;
-}
-
 .heading-secondary {
+  font-size: 24px;
   padding: 16px 0;
   margin: 10px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.section-heading {
+  padding: 32px 16px;
+}
+
+/* -------------------- *\
+    GRID
+\* -------------------- */
+.grid {
+  display: grid;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* -------------------- *\
+    CARD
+\* -------------------- */
+.card {
+  padding: 0 8px;
+  margin-bottom: 16px;
+}
+.card img {
+  width: 100%;
+  filter: grayscale(75%);
+}
+
+.card .name {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.card .title {
+  margin: 15px 0;
+  opacity: 0.6;
+}
+
+.card .description {
+  margin: 15px 0;
+}
+
+.card button {
+  padding: 8px 0;
+  background: #f1f1f1;
+  margin-bottom: 16px;
+}
+
+.card .btn:hover {
+  background: #ccc;
+}
+
+/* -------------------- *\
+    FORM
+\* -------------------- */
+.form .form-control {
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+.form button {
+  text-transform: uppercase;
+  color: #fff;
+  background: #000;
+  width: max-content;
+  padding: 8px 16px;
+  margin: 16px 0;
 }
