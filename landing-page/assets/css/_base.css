@@ -9,12 +9,7 @@ body {
   font-size: 15px;
   line-height: 1.5;
   height: 120vh;
-
   overflow-x: hidden;
-}
-
-main {
-  padding: 8px 16px;
 }
 
 h1,
@@ -57,7 +52,7 @@ ul {
     REUSABLE ELEMENTS
 \* -------------------- */
 .heading-primary {
-  color: #fff;
+  color: #f1f1f1;
   font-size: 36px;
   letter-spacing: 4px;
 }
@@ -71,6 +66,13 @@ ul {
 
 .section-heading {
   padding: 32px 16px;
+}
+
+.container {
+  max-width: 1564px;
+  width: 100%;
+  padding: 8px 16px;
+  margin: 0 auto;
 }
 
 /* -------------------- *\
@@ -88,35 +90,45 @@ ul {
     CARD
 \* -------------------- */
 .card {
+  display: flex;
+  flex-direction: column;
   padding: 0 8px;
   margin-bottom: 16px;
 }
-.card img {
+.card .card-header img {
   width: 100%;
   filter: grayscale(75%);
 }
 
-.card .name {
+.card .card-body .name {
   font-size: 24px;
   margin: 10px 0;
 }
 
-.card .title {
+.card .card-body .title {
   margin: 15px 0;
   opacity: 0.6;
 }
 
-.card .description {
+.card .card-body .description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   margin: 15px 0;
 }
 
-.card button {
+.card .card-footer {
+  margin-top: auto;
+}
+
+.card .card-footer button {
   padding: 8px 0;
   background: #f1f1f1;
   margin-bottom: 15px;
 }
 
-.card .btn:hover {
+.card .card-footer button:hover {
   background: #ccc;
 }
 
